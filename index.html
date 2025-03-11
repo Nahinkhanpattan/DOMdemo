@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manupulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>DOM Manupulation</h1>
+    </header>
+    <div class="main">
+        <div class="left">
+            <input type="text" id="selector">
+            <div class="selectors">
+                <div class="classes">
+                    <h3><b>CLASS</b></h3>
+                    <span>right</span>
+                    <span>container</span>
+                    <span>box1 to box4</span>
+                    <span>paras</span>
+                </div>
+                <div class="ids">
+                    <h3><b>ID</b></h3>
+                    <span>para1 to para4</span>
+                    <span>box1 to box4</span>
+                </div>
+                <div class="tags">
+                    <h3>TAG</h3>
+                    <span>p</span>
+                    <span>div</span>
+                    <span>html</span>
+                    <span>body</span>
+                    <span>header</span>
+                    <span>h1</span>
+                    <span>h3</span>
+                </div>
+            </div>
+            <div class="actions">
+                <h3>background color</h3>
+                <input type="text" class="input" id="bgcolor"><span><button onclick="bgcolor()">update</button></span>
+                <h3>font color</h3>
+                <input type="text" class="input" id="fontcolor"><span><button
+                        onclick="fontcolor()">update</button></span>
+                <h3>text</h3>
+                <input type="text" class="input" id="textreplace"><span><button
+                        onclick="textreplace()">update</button></span>
+                <h3>element</h3>
+                <input type="text" class="input" id="elementreplace"><span><button
+                        onclick="elementreplace()">update</button></span>
+            </div>
+        </div>
+        <div class="right">
+            <h1>This is DOM</h1>
+            <div class="container" id="box1">
+                <p id="para1" class="paras">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea cupiditate quis
+                    totam distinctio sunt molestiae repudiandae assumenda corrupti neque ducimus!</p>
+            </div>
+            <div class="container" id="box2">
+                <p id="para2" class="paras">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium similique natus porro possimus
+                    odio molestiae nihil facilis autem obcaecati pariatur, quod vero adipisci fuga, dignissimos dolorum
+                    in doloribus beatae sed.
+                </p>
+            </div>
+            <div class="container" id="box3">
+                <p id="para3" class="paras">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis reiciendis blanditiis corporis,
+                    repudiandae at, hic tempore quod enim sint veniam similique. Modi architecto aliquam repellat, atque
+                    minus porro voluptates quod.
+                </p>
+            </div>
+            <div class="container" id="box4">
+                <p id="para4" class="paras">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt assumenda eum, placeat maxime
+                    esse, atque natus voluptates nobis numquam distinctio eveniet, repellat obcaecati alias? Facilis
+                    eius minima repudiandae vel accusantium?
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
