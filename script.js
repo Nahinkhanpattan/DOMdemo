@@ -1,60 +1,63 @@
 function bgcolor() {
-    let bginput=document.querySelector('#bgcolor')
-    let input1=document.querySelector('#selector').value
-    let selectelement=document.querySelector(input1)
-    console.log(input1)
+    let bginput = document.querySelector('#bgcolor');
+    let input1 = document.querySelector('#selector').value;
+    let selectelements = document.querySelectorAll(input1);
+    console.log(input1);
     console.log(bginput.value);
-    if (selectelement)
-    {
-        selectelement.style.backgroundColor=bginput.value;
-    }
-    else
-    {
-        alert(`${input1} not found`)
+
+    if (selectelements.length > 0) {
+        selectelements.forEach((element) => {
+            element.style.backgroundColor = bginput.value;
+        });
+    } else {
+        alert(`${input1} not found`);
     }
 }
+
 function fontcolor() {
-    let colorinput=document.querySelector('#fontcolor')
-    let input1=document.querySelector('#selector').value
-    let selectelement=document.querySelector(input1)
-    console.log(input1)
-    console.log(colorinput.value)
-    if (selectelement)
-        {
-            selectelement.style.color=colorinput.value;
-        }
-        else
-        {
-            alert(`${input1} not found`)
-        }
+    let colorinput = document.querySelector('#fontcolor');
+    let input1 = document.querySelector('#selector').value;
+    let selectelements = document.querySelectorAll(input1);
+    console.log(input1);
+    console.log(colorinput.value);
+
+    if (selectelements.length > 0) {
+        selectelements.forEach((element) => {
+            element.style.color = colorinput.value;
+        });
+    } else {
+        alert(`${input1} not found`);
+    }
 }
+
 function textreplace() {
-    let textinput=document.querySelector('#textreplace')
-    let input1=document.querySelector('#selector').value
-    let selectelement=document.querySelector(input1)
-    console.log(input1)
-    console.log(textinput.value)
-    if (selectelement)
-        {
-            selectelement.innerText=textinput.value;
-        }
-        else
-        {
-            alert(`${input1} not found`)
-        }
+    let textinput = document.querySelector('#textreplace');
+    let input1 = document.querySelector('#selector').value;
+    let selectelements = document.querySelectorAll(input1);
+    console.log(input1);
+    console.log(textinput.value);
+
+    if (selectelements.length > 0) {
+        selectelements.forEach((element) => {
+            element.innerText = textinput.value;
+        });
+    } else {
+        alert(`${input1} not found`);
+    }
 }
+
 function elementreplace() {
-    let elementinput=document.querySelector('#elementreplace')
-    let input1=document.querySelector('#selector').value
-    let selectelement=document.querySelector(input1)
-    console.log(input1)
-    console.log(elementinput.value)
-    if (selectelement)
-        {
-            selectelement.innerHTML=elementinput.value;
-        }
-        else
-        {
-            alert(`${input1} not found`)
-        }
+    let elementinput = document.querySelector('#elementreplace');
+    let input1 = document.querySelector('#selector').value;
+    let selectelements = document.querySelectorAll(input1);
+    console.log(input1);
+    console.log(elementinput.value);
+
+    if (selectelements.length > 0) {
+        selectelements.forEach((element) => {
+            element.innerHTML = elementinput.value;
+        });
+    } else {
+        alert(`${input1} not found`);
+    }
 }
